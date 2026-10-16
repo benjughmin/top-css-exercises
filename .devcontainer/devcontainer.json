@@ -1,0 +1,10 @@
+{
+  "name": "top-css-exercises",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+  "remoteUser": "node",
+  "features": {
+    "ghcr.io/anthropics/devcontainer-features/claude-code:1.0": {}
+  },
+  "mounts": ["source=claude-code-config,target=/home/node/.claude,type=volume"],
+  "postCreateCommand": "sudo chown node:node /home/node/.claude"
+}
